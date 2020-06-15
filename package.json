@@ -1,10 +1,10 @@
 {
   "name": "nodejs-backend",
   "version": "1.0.0",
-  "main": "main.js",
+  "main": "src/main.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/main.js"
+    "dev": "nodemon"
   },
   "dependencies": {
     "express": "^4.17.1"
