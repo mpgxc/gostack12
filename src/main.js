@@ -7,5 +7,5 @@ app.get('/', (request, response) => {
 });
 
 app.listen(3333, () => {
-  console.log('Servidor Iniciado!');
+  console.log('Servidor Iniciado! 🚀');
 });
