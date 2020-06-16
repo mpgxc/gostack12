@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  Introdução ao Node.js
+  Introdução ao React.js
 </h3>
 
 <p align="center">Código do primeiro módulo do <a href="https://rocketseat.com.br/bootcamp">Bootcamp GoStack</a> 🎓</p>
@@ -45,7 +45,7 @@ $~ git clone https://github.com/mpgxc/gostack12.git
 ```
 #### 2. Entre na pasta do projeto;
 ```bash
-$~ cd gostack12/level-1/aula1-nodejs
+$~ cd gostack12/level-1/aula2-reactjs
 ```
 #### 3. Instalando dependências
 ```bash
