@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import Header from './components/Header';
-
+import './App.css';
+import Logo from './assets/img.png';
 /**
  * Componente
  * Propriedade
@@ -18,6 +19,7 @@ export default () => {
   return (
     <Fragment>
       <Header title={"Meu Deus!"}>
+        <img src={Logo} />
         <Header title={"Meu Deus!"}>
           <ul>Home</ul>
           <ul>Home2</ul>
