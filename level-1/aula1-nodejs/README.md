@@ -56,9 +56,21 @@ $~ yarn | npm install
 $~ yarn dev
 ```
 
-## ℹ️ Informações extras
+## ℹ️ Informações extras sobre API 
 
-...
+#### Sobre API - Métodos HTTP
+- GET - Buscar Informações do Back-end
+- POST - Cadastrar Informações no Back-end
+- PUT/PATCH - Atualizar Informações no Back-end
+  - PUT - Atualizar vários dados de uma vez.
+  - PATCH - Atualizar um dado em específico
+- DELETE - Deletar Informações no Back-end
+
+#### Tipos de Parâmetros
+- Query Paramas - Filtros e Paginação 
+  - Ex: api.com/?page=2&name=Mateus 
+- Route Params - Utilizado para selecionar um abjeto específico
+- Request Body - Utilizado para passar coteúdo para Back-end utilizando o formato JSON
 
 ## 🤔 Como contribuir
 
