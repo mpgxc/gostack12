@@ -1,16 +1,16 @@
-import React, { Fragment, useState } from 'react';
-import Header from './components/Header';
-import './App.css';
+import React, { Fragment, useState, useEffect } from 'react';
+import List from './components/Header';
+import api from './services/api';
 import Logo from './assets/img.png';
-/**
- * Componente
- * Propriedade
- * Estado
- */
+import './App.css';
 
 export default () => {
 
-  const [data, setData] = useState([0, 1, 2, 3, 4, 5]);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    api.get('/projects').then(response => setData(response.data));
+  }, []);
 
   const handleClick = () => {
     setData([...data, data[data.length - 1] + 1]);
@@ -18,14 +18,9 @@ export default () => {
 
   return (
     <Fragment>
-      <Header title={"Meu Deus!"}>
+      <List title={"Meu Deus!"}>
         <img src={Logo} />
-        <Header title={"Meu Deus!"}>
-          <ul>Home</ul>
-          <ul>Home2</ul>
-          <ul>Hodme3</ul>
-        </Header>
-      </Header>
+      </List>
       {
         data.map(item => <ul key={`item-${item}`}>{item}</ul>)
       }
