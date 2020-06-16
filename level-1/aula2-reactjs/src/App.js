@@ -12,19 +12,21 @@ export default () => {
     api.get('/projects').then(response => setData(response.data));
   }, []);
 
-  const handleClick = () => {
-    setData([...data, data[data.length - 1] + 1]);
+  const handleSubmit = () => {
+
   }
 
   return (
     <Fragment>
       <List title={"Meu Deus!"}>
-        <img src={Logo} />
+        <h1>Hello, there</h1>
       </List>
-      {
-        data.map(item => <ul key={`item-${item}`}>{item}</ul>)
-      }
-      <button type="button" onClick={handleClick}>Clicka Aqui</button>
+      <ul>
+        {data.map(item => (
+          <li key={item.id}>{item.title}</li>)
+        )}
+      </ul>
+      <button type="button" onClick={handleSubmit}>Clicka Aqui</button>
     </Fragment>
   );
 }
