@@ -36,7 +36,7 @@
 <hr>
 <br/>
 
-## 🚀 Como rodar este projeto ?
+## 🚀 Instalação e execução ?
 
 
 #### 1. Faça um clone desse repositório
