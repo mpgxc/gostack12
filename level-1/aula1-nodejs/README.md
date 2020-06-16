@@ -75,4 +75,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](../LICENSE.md) p
 
 ---
 
-Made with ♥ by Mateus Garcia :wave: [Get in touch!](https://www.linkedin.com/in/mpgxc/)
+Made with ♥ by **[mpgxc](https://www.linkedin.com/in/mpgxc/)**
