@@ -58,7 +58,7 @@ $~ yarn dev
 
 ## ℹ️ Informações extras sobre API 
 
-#### Sobre API - Métodos HTTP
+#### Métodos HTTP
 - GET - Buscar Informações do Back-end
 - POST - Cadastrar Informações no Back-end
 - PUT/PATCH - Atualizar Informações no Back-end
@@ -71,6 +71,10 @@ $~ yarn dev
   - Ex: api.com/?page=2&name=Mateus 
 - Route Params - Utilizado para selecionar um abjeto específico
 - Request Body - Utilizado para passar coteúdo para Back-end utilizando o formato JSON
+
+#### Middlewares
+- Interceptador / Intermediador - Uma função onde se pode manipular ou interromper requisições antes que a requisição chegue ao destino. 
+- Pode ser utilizado para restringir acesso a rotas específicas.
 
 ## 🤔 Como contribuir
 
