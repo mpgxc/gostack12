@@ -69,8 +69,6 @@ app.put('/projects/:id', (request, response) => {
 
 app.delete('/projects/:id', (request, response) => {
   const { id } = request.params;
-  const { title, owner } = request.body;
-
   const projectIndex = projects.findIndex(item => item.id === id);
 
   if (projectIndex < 0) {
