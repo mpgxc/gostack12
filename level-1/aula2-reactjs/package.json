@@ -23,6 +23,7 @@
     "build": "webpack-dev-server --mode production"
   },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.10.1",
     "webpack-dev-server": "^3.11.0"
   }
 }

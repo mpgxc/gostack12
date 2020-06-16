@@ -9,11 +9,20 @@ export default () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    api.get('/projects').then(response => setData(response.data));
+    (async () => {
+      const response = await api.get('projects');
+      setData(response.data);
+    })()
   }, []);
 
-  const handleSubmit = () => {
+  const handleAddProject = async () => {
 
+    const response = await api.post('projects', {
+      title: "teste opaaaa",
+      owner: "Eitchaaaaaaa"
+    });
+
+    setData([...data, response.data]);
   }
 
   return (
@@ -26,7 +35,7 @@ export default () => {
           <li key={item.id}>{item.title}</li>)
         )}
       </ul>
-      <button type="button" onClick={handleSubmit}>Clicka Aqui</button>
+      <button type="button" onClick={handleAddProject}>Clicka Aqui</button>
     </Fragment>
   );
 }
