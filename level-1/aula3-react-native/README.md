@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  Introdução ao React.js
+  Introdução ao React Native
 </h3>
 
 <p align="center">Código do primeiro módulo do <a href="https://rocketseat.com.br/bootcamp">Bootcamp GoStack</a> 🎓</p>
@@ -45,7 +45,8 @@ $~ git clone https://github.com/mpgxc/gostack12.git
 ```
 #### 2. Entre na pasta do projeto;
 ```bash
-$~ cd gostack12/level-1/aula2-reactjs
+$~ cd gostack12/level-1/aula3-react-native
+
 ```
 #### 3. Instalando dependências
 ```bash
@@ -53,7 +54,7 @@ $~ yarn | npm install
 ```
 #### 4. Depois você pode iniciar
 ```bash
-$~ yarn dev
+$~ yarn run dev
 ```
 
 ## ℹ️ Informações extras sobre API 
