@@ -45,7 +45,7 @@ $~ git clone https://github.com/mpgxc/gostack12.git
 ```
 #### 2. Entre na pasta do projeto;
 ```bash
-$~ cd gostack12/level-1/aula2-reactjs
+$~ cd gostack12/level-1/aula4-typescript
 ```
 #### 3. Instalando dependências
 ```bash
