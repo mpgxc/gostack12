@@ -7,7 +7,7 @@ interface CreateUserData {
   name?: string;
   email: string;
   password: number;
-  numbers: number[],
+  numbers: number[] | Array<number>,
   techs: Array<string | TechObject>;
 }
 
