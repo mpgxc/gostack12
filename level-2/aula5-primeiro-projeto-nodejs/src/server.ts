@@ -10,5 +10,5 @@ server.post('/', (request, response) => {
 });
 
 server.listen(3333, () => {
-    console.log('Server GoStck! Iniciado!');
+    console.log('Server GoStck! Iniciado! 🚀 <3');
 });
