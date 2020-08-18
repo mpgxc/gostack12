@@ -1,15 +1,10 @@
 import { Router } from 'express';
-import { uuid } from 'uuidv4';
 import { startOfHour, parseISO, isEqual } from 'date-fns';
-
-interface Appointment {
-    id: string;
-    provider: string;
-    date: Date;
-}
+import Appointment from '../models/Appointment';
 
 const appointmentsRouter = Router();
 
+// Banco na Memória, por hora
 const appointmentsData: Appointment[] = [];
 
 appointmentsRouter.post('/', (req, res) => {
@@ -17,6 +12,7 @@ appointmentsRouter.post('/', (req, res) => {
 
     const parsedDate = parseISO(date);
     const startedDate = startOfHour(parsedDate);
+
     const findAppointmentInSameDate = appointmentsData.find(app =>
         isEqual(startedDate, app.date),
     );
@@ -24,11 +20,8 @@ appointmentsRouter.post('/', (req, res) => {
     if (findAppointmentInSameDate) {
         return res.status(400).json('Horário já preenchido!');
     }
-    const appointmentTemp = {
-        id: uuid(),
-        provider,
-        date: startedDate,
-    };
+    const appointmentTemp = new Appointment(provider, startedDate);
+
     appointmentsData.push(appointmentTemp);
 
     return res.json(appointmentTemp);
